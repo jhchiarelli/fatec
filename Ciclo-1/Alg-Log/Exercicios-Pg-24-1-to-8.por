@@ -2,12 +2,12 @@
 programa
 {
 	//*************************************************
-	// Diciplina Algoritmo e Logica de Programacao	*		
-	// Professor Rogerio						*
-	// Lista de Exercicios Apostila				*
-	// Pag: 24 Exercicios de 1 a 8				*
-	// Aluno Jorge Henrique Chiarelli				*
-	// 24 de agosto, 2021						*
+	// Diciplina Algoritmo e Logica de Programacao
+	// Professor Rogerio Sgoti
+	// Lista de Exercicios Apostila
+	// Pag: 24 Exercicios de 1 a 8
+	// Aluno Jorge Henrique Chiarelli
+	// 24 de agosto, 2021
 	//*************************************************
 	
 	funcao inicio() {
@@ -143,7 +143,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 286; 
+ * @POSICAO-CURSOR = 2960; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
