@@ -22,8 +22,52 @@ programa
 		//checa_maioridade()
 		//checa_imposto_salario()
 		//checa_acesso()
-		mostra_a_idade_checa_votar_habilitacao()
+		//mostra_a_idade_checa_votar_habilitacao()
+		mostra_o_cupom_compra()
 	}
+	//Exercicio Pag 11
+	//2) Escreva um algoritmo que receba o nome do cliente, o valor de uma
+	//compra em uma loja e a condição de pagamento. Caso a condição seja “à
+	//vista” aplicar um desconto de 7% no valor da compra e exibir: o nome do
+	//cliente, a forma de pagto, o valor da compra e o valor com desconto (uma
+	//informação em cada linha). Caso contrário, exibir: o nome do cliente, a
+	//forma de pagto e o valor da compra.
+	
+	funcao mostra_o_cupom_compra() {
+		cadeia name
+		real vlr_compra = 27.00
+		real vlr_desconto = 0.0
+		real vlr_total = 0.0
+		inteiro forma_pag = 0
+		
+		escreva("MOSTRA O CUPOM DA COMPRA\n")
+		escreva("Digite seu nome: ")
+		leia(name)		
+		escreva("Informe a Forma de Pagamento\n")
+		escreva("1 - Para Pagamento À vista.\n")
+		escreva("2 - Para Pagamento À prazo.\n")
+		escreva("Digite a forma de pagamento: ")
+		leia(forma_pag)
+
+		se (forma_pag == 1 ) {
+			vlr_desconto = vlr_compra * 0.07
+			vlr_total = vlr_compra - vlr_desconto
+			escreva("Cliente.......: ", name, "\n")
+			escreva("Pagamento.....: ", "À vista\n")
+			escreva("Sub-total.....: ", vlr_compra, "\n")
+			escreva("Desconto......: ", vlr_desconto, "\n")
+			escreva("Total c/ Desc.: R$ ", vlr_total)
+		}
+
+		senao {
+			vlr_total = vlr_compra - vlr_desconto
+			escreva("Cliente.....: ", name, "\n")
+			escreva("Pagamento...: ", "À prazo\n")
+			escreva("Total.......: R$ ", vlr_total, "\n")
+		}
+		
+	}
+	
 	//** Estrutura Condicional Simples **
 	//12) Faça um algoritmo que leia o ano de nascimento de uma pessoa, calcule e mostre sua idade
 	//e, também, verifique e mostre se ela já tem idade para votar (16 anos ou mais) e para obter a
@@ -39,17 +83,17 @@ programa
 
 		se (idade >= 18) {
 			escreva("Autorizado a Votar!\n")
-			escreva("Autoizado a obter a Habilitação!\n")
+			escreva("Autorizado a obter a Habilitação!\n")
 		}
 
 		se (idade < 18 e idade >= 16) {
 			escreva("Autorizado a Votar!\n")
-			escreva("Não autoizado a obter a Habilitação!\n")
+			escreva("Não Autorizado a obter a Habilitação!\n")
 		}
 
 		se (idade < 16) {
 			escreva("Não Autorizado a Votar!\n")
-			escreva("Não autoizado a obter a Habilitação!\n")
+			escreva("Não Autorizado a obter a Habilitação!\n")
 		}
 	}
 
@@ -237,7 +281,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1546; 
+ * @POSICAO-CURSOR = 1873; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
