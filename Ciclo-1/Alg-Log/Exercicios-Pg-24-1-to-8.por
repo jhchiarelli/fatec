@@ -11,7 +11,7 @@ programa
 	//*************************************************
 	
 	funcao inicio() {
-		calc_quadrado()
+		//calc_quadrado()
 		//calc_area_terreno()
 		//convert_celcius_farenheit()
 		//calcula_ganho_dia()
@@ -19,6 +19,100 @@ programa
 		//calcula_media_do_aluno()
 		//calcula_salario()
 		//calcula_valor_elevado_a_b()
+		//checa_maioridade()
+		//checa_imposto_salario()
+		//checa_acesso()
+		mostra_a_idade_checa_votar_habilitacao()
+	}
+	//** Estrutura Condicional Simples **
+	//12) Faça um algoritmo que leia o ano de nascimento de uma pessoa, calcule e mostre sua idade
+	//e, também, verifique e mostre se ela já tem idade para votar (16 anos ou mais) e para obter a
+	//carteira de habilitação (18 anos ou mais).
+	funcao mostra_a_idade_checa_votar_habilitacao() {
+		inteiro nascimento, idade
+		
+		escreva("MOSTRA A IDADE DA PESSOA, SE PODE VOTARM, SE PODE OBTER HABILITACAO\n")		
+		escreva("Digite seu ano de nascimento: ")
+		leia(nascimento)		
+		idade = 2021 - nascimento //Considerei o ano atual
+		escreva(idade, " anos de idade\n")
+
+		se (idade >= 18) {
+			escreva("Autorizado a Votar!\n")
+			escreva("Autoizado a obter a Habilitação!\n")
+		}
+
+		se (idade < 18 e idade >= 16) {
+			escreva("Autorizado a Votar!\n")
+			escreva("Não autoizado a obter a Habilitação!\n")
+		}
+
+		se (idade < 16) {
+			escreva("Não Autorizado a Votar!\n")
+			escreva("Não autoizado a obter a Habilitação!\n")
+		}
+	}
+
+	//** Estrutura Condicional Simples **
+	//11) Faça um algoritmo que verifique a validade de uma senha fornecida pelo usuário para ter
+	//acesso a um terminal de consulta. A senha é um conjunto de caracteres que são: “fatecbt”. O
+	//algoritmo deve imprimir mensagem de permissão ou negação de acesso.
+	funcao checa_acesso() {
+		cadeia senha
+
+		escreva("CHECA ACESSO DO USUÁRIO\n")
+
+		escreva("Digite sua Senha: ")
+		leia(senha)
+		
+		se (senha == "fatecbt") {
+			escreva("Acesso permitido!\n")			
+		}
+
+		se (senha != "fatecbt") {
+			escreva("Acesso negado!\n")			
+		}
+					
+	}
+
+	//** Estrutura Condicional Simples **
+	//10) Assuma que o funcionário do exercício 07 deve pagar 10% de imposto se o seu salário anual
+	//for menor ou igual a R$ 12.000,00. Caso o salário seja maior que este valor o imposto devido é
+	//igual a 10% sobre R$ 12.000,00 mais 25% sobre o que passar de R$ 12.000,00. Escreva um
+	//algoritmo que calcule e exiba o imposto a ser pago.	
+	funcao checa_imposto_salario() {
+		real base_salario_anual = 12000.0
+		real salario_funcionario = 12500.0
+		real imposto = 0.0
+
+		escreva("CALCULA SE O FUNCIONARIO TEM QUE PAGAR IMPOSTO DO SALARIO\n")
+
+		imposto =  salario_funcionario * 0.10
+		se (salario_funcionario <= base_salario_anual) {
+			escreva("Salario Funcionario.: R$ ", salario_funcionario, "\n")
+			escreva("Imposto Salario.....: R$ ", imposto, "\n" )
+		}
+		
+		se (salario_funcionario > base_salario_anual) {			
+			escreva("Salario Funcionario.: R$ ", salario_funcionario, "\n")
+			escreva("Imposto Salario.....: R$ ", imposto * 1.25, "\n" )
+		}
+			
+	}
+	
+	//9) Faça um algoritmo que receba a idade de uma pessoa e exiba as mensagens: “Maior de idade”
+	//ou “Menor de idade”.
+	funcao checa_maioridade() {
+		inteiro  idade
+		
+		escreva("MOSTRA SE A PESSOA É MAIOR DE IDADE OU MENOR DE IDADE\n")		
+		escreva("Digite sua idade: ")
+		leia(idade)		
+		se (idade > 17)
+			escreva("Essa pessoa é Maior de Idade.")
+		senao
+			escreva("Essa pessoa é Menor de Idade.")
+			
 	}
 	
 	//Exercicio 08) Faça um algoritmo para calcular um valor A elevado a um expoente B. Os valores A e B
@@ -143,7 +237,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2960; 
+ * @POSICAO-CURSOR = 1546; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
