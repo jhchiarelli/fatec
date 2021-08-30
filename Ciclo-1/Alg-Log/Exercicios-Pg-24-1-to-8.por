@@ -23,8 +23,31 @@ programa
 		//checa_imposto_salario()
 		//checa_acesso()
 		//mostra_a_idade_checa_votar_habilitacao()
-		mostra_o_cupom_compra()
+		//mostra_o_cupom_compra()
+		mostra_par_ou_impar()
 	}
+
+	//Exercicio Pag-25
+	//17) Escreva um algoritmo que receba um número inteiro e exiba se esse número é par ou ímpar.
+	funcao mostra_par_ou_impar() {
+		inteiro numero, resto
+		
+		escreva("MOSTRA SE NÚMERO É PAR OU IMPAR\n")
+		escreva("Digite um Número: ")
+		leia(numero)
+
+		resto = (numero%2)
+
+		se (resto == 0) {
+			escreva("O Número é Par")
+		}
+		senao {
+			escreva("O Número é Impar")
+		}
+		
+
+	}
+	
 	//Exercicio Pag 11
 	//2) Escreva um algoritmo que receba o nome do cliente, o valor de uma
 	//compra em uma loja e a condição de pagamento. Caso a condição seja “à
@@ -281,7 +304,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1873; 
+ * @POSICAO-CURSOR = 1114; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
