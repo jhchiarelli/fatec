@@ -1,0 +1,28 @@
+Program Calc_Media;
+Uses crt;
+Var
+ nome_aluno: string;
+ P1, P2, MF: real;
+begin
+ clrscr;
+ writeln ('CALCULO DE MEDIA FINAL');
+ writeln;
+ write ('Digite o nome do aluno: ');
+ readln (nome_aluno);
+ writeln;
+ write ('Digite a primeira nota: ');
+ readln (P1);
+ writeln;
+ write ('Digite a segunda nota: ');
+ readln (P2);
+ MF := (P1 + P2)/2;
+ writeln;
+ writeln ('Media Final = ', MF:2:1);
+ writeln;
+ if (MF >= 6.0) then
+        writeln ('Aprovado')
+ else
+        writeln ('Reprovado');
+ repeat until keypressed; {comando para congelar a tela, é equivalente à instrução readkey;}
+end.
+
