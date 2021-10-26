@@ -23,6 +23,10 @@ begin
       find := true;
       writeln('O NUMERO 14 ESTA NO VETOR');
       writeln('POSICAO: ', i );
+     end
+     else
+     begin
+      find := false;
      end;
   end;
   if (find = false) then
