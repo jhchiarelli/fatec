@@ -26,7 +26,7 @@ begin
       if (Numero[j] = Numero[i]) then
        begin
         retorno := true;
-        writeln('Achei esse numero repetido: ', Numero[j], ' na Posicao: ', i );
+        writeln('Achei esse numero repetido: ', Numero[j], ' na Posicao: ', j );
        end;
       end;
    end;
