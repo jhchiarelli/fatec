@@ -1,5 +1,5 @@
-.bak
-.o
-.err
-.out
-.exe
+*.bak
+*.o
+*.err
+*.out
+*.exe
