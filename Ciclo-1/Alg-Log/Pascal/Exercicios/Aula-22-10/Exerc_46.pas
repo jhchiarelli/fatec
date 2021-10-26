@@ -23,20 +23,20 @@ begin
    begin
     for j := i + 1 to quantidade  do
      begin
-		if (Numero[j] = Numero[i]) then
-		 begin
-		  retorno := true;
-		  writeln('Achei esse numero repetido: ', Numero[j], ' na Posicao: ', i );
-		 end;
-	end;
-  end;
-  if (retorno = true) then
-   begin
-    writeln('Foi encontrado numeros iguais');
-   end
-   else
-   begin
-	writeln('Nao Foi encontrado nenhum numero igual');
+      if (Numero[j] = Numero[i]) then
+       begin
+        retorno := true;
+        writeln('Achei esse numero repetido: ', Numero[j], ' na Posicao: ', i );
+       end;
+      end;
    end;
-  readkey;
+   if (retorno = true) then
+    begin
+     writeln('Foi encontrado numeros iguais');
+    end
+    else
+     begin
+      writeln('Nao Foi encontrado nenhum numero igual');
+     end;
+   readkey;
 end.
