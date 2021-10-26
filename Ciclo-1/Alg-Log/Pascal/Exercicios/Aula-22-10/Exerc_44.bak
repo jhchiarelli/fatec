@@ -1,0 +1,26 @@
+Program Exerc_44;
+Uses crt;
+Type
+ vet_num = array [1..250] of integer;
+Var
+ N: vet_num;
+ i : integer;
+BEGIN
+ clrscr;
+ writeln (‘PROGRAMA PESQUISA NÚMERO 14’);
+ for i := 1 to 6 do
+begin
+ write (‘Digite um número: ‘);
+ readln (N[ i ]);
+end;
+ writeln (‘VERIFICANDO EXISTÊNCIA DO Nº 14’);
+ for i := 1 to 6 do
+begin
+ if (N[ i ] = 14)
+then begin
+writeln (‘O nº 14 existe no vetor’);
+writeln (‘Posição: ‘, i );
+ end;
+end;
+ readkey;
+END.
