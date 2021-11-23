@@ -1,6 +1,9 @@
 program CalculoFatorial;
 Uses crt;
-procedure calc_fatorial(x: Integer); 
+Var
+ num, result: integer;
+ 
+function calc_fatorial(x: Integer): integer; 
 Var
    N, Cont, Fat: Integer;
 Begin
@@ -13,14 +16,16 @@ Begin
        Begin
           Fat  := Fat * Cont;
           Cont := Cont + 1;
-       End;
-   Writeln('O Fatorial do numero ', N, ' he: ', Fat);
+       End; 
+       
+       result:= Fat;
     
 end; 
  
 begin
 
-  writeln ('Calculo Fatorial');
-  calc_fatorial(3);
+  writeln ('Calculo Fatorial por Funcao');
+  Read(num);
+  Writeln('O Fatorial do numero ', num, ' he: ', calc_fatorial(num));
   //readkey;
 end.
