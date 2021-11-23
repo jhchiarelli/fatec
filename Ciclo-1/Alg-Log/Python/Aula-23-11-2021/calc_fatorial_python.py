@@ -1,3 +1,4 @@
+# Programa calcula fatorial
 numero = int(input("Fatorial de: ") )
 
 def calc_fatorial(n):
@@ -9,3 +10,4 @@ def calc_fatorial(n):
   return resultado
 
 print(calc_fatorial(3))
+
