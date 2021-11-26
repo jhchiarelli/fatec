@@ -1,5 +1,5 @@
 //##########################################
-// Autor: Jorge Henrique Chiarelli     
+// Autor: Jorge Henrique Chiarelli
 // Programa: Calculadora em Codigo Pascal
 // Fatec Botucatu-SP
 // Professor Rogério Ferreira Sgoti
@@ -39,19 +39,19 @@ begin
         2: Subtrair(v1, v2);
         3: writeln('O Resultado da Multiplicacao: ', Multiplicar(v1, v2):4:2);
         4: writeln('O Resultado da Divisao: ', Divisao(v1, v2):4:2);
-        5: exit();
+        5: halt;
         else
             writeln('Selecione uma OPCAO Valida');
-    end; 
+    end;
 end;
 
 procedure MainMenu();
 begin
-    repeat
+        repeat
 		writeln;
-		write('Digite o Primeiro Número: ');
+		write('Digite o Primeiro Numero: ');
 		read(v1);
-		write('Digite o Segundo Número: ');
+		write('Digite o Segundo Numero: ');
 		read(v2);
 		clrscr;
 		writeln('--------------MENU------------');
@@ -70,6 +70,7 @@ end;
 
 
 begin
+    clrscr;
     opcaoMenu:= 0;
     v1:= 0.0;
     v2:= 0.0;
