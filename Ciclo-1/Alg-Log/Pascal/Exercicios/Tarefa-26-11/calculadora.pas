@@ -34,7 +34,7 @@ end;
 
 procedure Operacoes(op: Integer; valor1: real; valor2: real);
 begin
-    case opcaoMenu of
+    case op of
         1: Somar(v1, v2);
         2: Subtrair(v1, v2);
         3: writeln('O Resultado da Multiplicacao: ', Multiplicar(v1, v2):4:2);
