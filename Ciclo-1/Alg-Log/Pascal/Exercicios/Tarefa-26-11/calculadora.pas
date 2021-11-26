@@ -10,8 +10,6 @@ Uses crt, SysUtils;
 Var
  opcaoMenu: Integer;
  v1, v2: Real;
-
-
 procedure Somar(x1: real; x2: real);
 begin
     writeln('O Resultado da Soma: ', (x1+x2):4:2);
@@ -36,7 +34,6 @@ end;
 
 procedure Operacoes(op: Integer; valor1: real; valor2: real);
 begin
-
     case opcaoMenu of
         1: Somar(v1, v2);
         2: Subtrair(v1, v2);
@@ -51,26 +48,23 @@ end;
 procedure MainMenu();
 begin
     repeat
-    writeln;
-    write('Digite o Primeiro Número: ');
-    read(v1);
-    write('Digite o Segundo Número: ');
-    read(v2);
-    writeln;
-    
-	clrscr;
-	writeln('--------------MENU------------');
-	writeln('** 1 - SOMAR        ');
-	writeln('** 2 - SUBTRAIR     ');
-	writeln('** 3 - MULTIPLICAR  ');
-	writeln('** 4 - DIVIDIR      ');
-	writeln('** 5 - SAIR         ');
-	writeln('------------------------------');
-	writeln;
-	write('DIGITE UMA OPCAO: ');
-	read(opcaoMenu);
-	Operacoes(opcaoMenu, v1, v2);
-	
+		writeln;
+		write('Digite o Primeiro Número: ');
+		read(v1);
+		write('Digite o Segundo Número: ');
+		read(v2);
+		clrscr;
+		writeln('--------------MENU------------');
+		writeln('** 1 - SOMAR        ');
+		writeln('** 2 - SUBTRAIR     ');
+		writeln('** 3 - MULTIPLICAR  ');
+		writeln('** 4 - DIVIDIR      ');
+		writeln('** 5 - SAIR         ');
+		writeln('------------------------------');
+		writeln;
+		write('DIGITE UMA OPCAO: ');
+		read(opcaoMenu);
+		Operacoes(opcaoMenu, v1, v2);
 	until opcaoMenu=5;
 end;
 
