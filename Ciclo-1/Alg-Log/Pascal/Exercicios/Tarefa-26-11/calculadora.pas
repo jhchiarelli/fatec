@@ -18,7 +18,7 @@ begin
     writeln('O Resultado da Soma: ', (x1+x2):4:2);
 end;
 
-procedure Subtrair(x1: real; x2: real);
+procedure Subtrair(var x1: real; x2: real);
 begin
     x1:= x1;
     x2:= x2;
