@@ -1,10 +1,9 @@
-{
-
-                            Online Pascal Compiler.
-                         Calculadora em Codigo Pascal
-
-}
-
+//##########################################
+// Autor: Jorge Henrique Chiarelli     
+// Programa: Calculadora em Codigo Pascal
+// Fatec Botucatu-SP
+// Professor Rogério Ferreira Sgoti
+//##########################################
 
 program Calculadora;
 Uses crt, SysUtils;
@@ -59,9 +58,9 @@ begin
     read(v2);
     writeln;
     
-    clrscr;
-    writeln('--------------MENU------------');
-    writeln('** 1 - SOMAR        ');
+	clrscr;
+	writeln('--------------MENU------------');
+	writeln('** 1 - SOMAR        ');
 	writeln('** 2 - SUBTRAIR     ');
 	writeln('** 3 - MULTIPLICAR  ');
 	writeln('** 4 - DIVIDIR      ');
