@@ -2,8 +2,8 @@ program CalculoFatorial;
 Uses crt;
 Var
  num, result: integer;
- 
-function calc_fatorial(x: Integer): integer; 
+//Funcao
+function calc_fatorial(x: Integer): integer;
 Var
    N, Cont, Fat: Integer;
 Begin
@@ -16,12 +16,12 @@ Begin
        Begin
           Fat  := Fat * Cont;
           Cont := Cont + 1;
-       End; 
-       
+       End;
+
        result:= Fat;
-    
-end; 
- 
+
+end;
+
 begin
 
   writeln ('Calculo Fatorial por Funcao');

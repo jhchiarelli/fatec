@@ -1,6 +1,7 @@
 program CalculoFatorial;
 Uses crt;
-procedure calc_fatorial(x: Integer); 
+//Procedure por valor
+procedure calc_fatorial(x: Integer);
 Var
    N, Cont, Fat: Integer;
 Begin
@@ -15,9 +16,9 @@ Begin
           Cont := Cont + 1;
        End;
    Writeln('O Fatorial do numero ', N, ' he: ', Fat);
-    
-end; 
- 
+
+end;
+
 begin
 
   writeln ('Calculo Fatorial');
