@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <locale.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/*
+Aluno Jorge Henrique Chiarelli
+Professor Renato Gambarat
+Exercicios C 
+*/
 
 void printint();
 void printreal();
