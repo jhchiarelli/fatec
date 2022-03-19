@@ -4,8 +4,9 @@
 
 /*
 Aluno Jorge Henrique Chiarelli
-Professor Renato Gambarat
-Exercicios C 
+Professor Renato Gambarato
+Exercicios C
+Periodo Ciclo 2 Noturno
 */
 
 void printint();
