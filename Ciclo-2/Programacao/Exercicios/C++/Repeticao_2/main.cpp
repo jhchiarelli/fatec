@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 #include <time.h>
 #include <locale.h>
 /* 
@@ -13,6 +14,8 @@ Data 20-03-2022
 void MainMenuCustom();
 void MostraCincoPrimeiros();
 
+using namespace std;
+
 int main(int argc, char** argv) {
 	
 	//Seta o local
@@ -24,6 +27,39 @@ int main(int argc, char** argv) {
 	MainMenuCustom();
 	
 	return 0;
+}
+
+void FiboFor() {
+	unsigned int sequencia = 0;
+	unsigned int a = 0 , b = 1;
+	unsigned int limite = 0;
+
+	cout << "Quantos numeros Fibonacci deseja gerar?" << endl;
+	cin >> limite;
+
+	cout << a << endl;
+	cout << b << endl;
+
+	for( int n = 0; n < limite; n++) {
+		sequencia = (a + b);
+		cout << sequencia  << endl;
+		a = b;
+		b = sequencia;
+	}
+    
+}
+
+void Fibo() {
+	int n, fib = 0, aux = 0;    
+    printf("Informe um numero para calcular a seq. de Fibonacci.\n ");
+
+    scanf("%d", &n);
+    while(fib <1000) { 
+        printf("%d-", fib);                   
+        fib = fib + aux;                 
+        aux = n;
+        n = fib;        
+    }
 }
 
 void Tabuada() {
@@ -131,6 +167,8 @@ void MainMenuCustom() {
 		printf("5 - Digitar 10 Valores\n");
 		printf("6 - Calculo de Fatorial\n");
 		printf("7 - Tabuada\n");
+		printf("8 - Fibonacci\n");
+		printf("9 - Fibonacci For\n");
 		printf("0 - Sair do Menu\n");
 		
 		scanf("%d", &loopMenu);
@@ -158,6 +196,12 @@ void MainMenuCustom() {
 				break;
 			case 7:
 				Tabuada();
+				break;
+			case 8:
+				Fibo();
+				break;
+			case 9:
+				FiboFor();
 				break;
 			case 0:
 				exit;
